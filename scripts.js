@@ -12,7 +12,7 @@ function getRandomInt(max) {
 function generateStokrotka() {
   const stokrotka = document.createElement("div");
   stokrotka.className = "flower";
-  stokrotka.style.backgroundImage = `url("${getRandomInt(3)}.png")`;
+  stokrotka.style.backgroundImage = `url("${getRandomInt(4)}.png")`;
   container.appendChild(stokrotka);
   stokrotka.style.top = `${getRandomInt(window.innerHeight - stokrotka.offsetWidth)}px`;
   stokrotka.style.left = `${getRandomInt(window.innerWidth - stokrotka.offsetWidth)}px`;
