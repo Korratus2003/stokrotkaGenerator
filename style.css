@@ -30,7 +30,7 @@ body{
 }
 #heart{
     z-index: 1001;
-    width: 30%;
+    width: 15%;
     aspect-ratio: 1;
     background-color: tomato;
     position: relative;
