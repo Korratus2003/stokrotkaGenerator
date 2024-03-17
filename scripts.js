@@ -14,8 +14,10 @@ function generateStokrotka() {
   stokrotka.className = "flower";
   stokrotka.style.backgroundImage = `url("${getRandomInt(4)}.png")`;
   container.appendChild(stokrotka);
-  stokrotka.style.top = `${getRandomInt(window.innerHeight - stokrotka.offsetWidth)}px`;
-  stokrotka.style.left = `${getRandomInt(window.innerWidth - stokrotka.offsetWidth)}px`;
+  stokrotka.style.top = `${getRandomInt(window.innerHeight+200)-100}px`;
+  stokrotka.style.left = `${getRandomInt(window.innerWidth+200)-100}px`;
+  stokrotka.style.width = `${getRandomInt(30)}%`;
+  stokrotka.style.rotate = `${getRandomInt(360)}deg`;
 
   stokrotka.addEventListener("mousedown", handleMouseDown);
   stokrotka.addEventListener("mousemove", handleMouseMove);
