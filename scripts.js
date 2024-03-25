@@ -2,6 +2,7 @@ const container = document.querySelector("#container");
 const heart = document.querySelector("#heart");
 const napis = document.querySelector("#napis");
 
+let licznik = 0;
 let komplementy = [
     "Jesteś piękna",
     "Twoje uśmiechy są promieniejące",
@@ -81,6 +82,9 @@ function getRandomInt(max) {
 function generujNapis(){
   napis.textContent = komplementy[index];
   index= getRandomInt(komplementy.length-2);
+  licznik++;
+  if((licznik%20==0)&&(licznik!=100)) {alert(`Kliknęłaś to już ${licznik} razy 🥺`)};
+  if((licznik%100==0)&&(confirm(`Kliknęłaś to już ${licznik} razy, czy chcesz przejść do kolejnej niespodzianki czy bawić się dalej stokrotkami?`))) location.replace("surprise.html")
 }
 
 function generateStokrotka() {
