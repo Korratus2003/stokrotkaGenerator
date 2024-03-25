@@ -23,6 +23,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     filter: drop-shadow(1px 3px 2px black);
+    border-radius: 50%;
 }
 #heart_holder{
     width: 100vw;
