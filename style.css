@@ -77,3 +77,31 @@ body{
     font-weight: bold;
     font-size: x-large;
 }
+::backdrop {
+    background-image: linear-gradient(
+      45deg,
+      magenta,
+      rebeccapurple,
+      dodgerblue,
+      green
+    );
+    opacity: 0.75;
+  }
+dialog{
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+dialog button{
+    width: 25%;
+    margin: 5% 5% 0 0;
+    padding: 2%;
+}

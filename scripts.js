@@ -1,6 +1,9 @@
 const container = document.querySelector("#container");
 const heart = document.querySelector("#heart");
 const napis = document.querySelector("#napis");
+const dialog = document.querySelector("dialog");
+const dialogTekst = document.querySelector("dialog p");
+const dialogButtons = document.querySelectorAll("dialog button");
 
 let licznik = 0;
 let komplementy = [
@@ -83,8 +86,11 @@ function generujNapis(){
   napis.textContent = komplementy[index];
   index= getRandomInt(komplementy.length-2);
   licznik++;
-  if((licznik%20==0)&&(licznik!=100)) {alert(`Kliknęłaś to już ${licznik} razy 🥺`)};
-  if((licznik%100==0)&&(confirm(`Kliknęłaś to już ${licznik} razy, czy chcesz przejść do kolejnej niespodzianki czy bawić się dalej stokrotkami?`))) location.assign("surprise.html")
+  if((licznik%20==0)&&(licznik%100!=0)) {alert(`Kliknęłaś to już ${licznik} razy 🥺`)};
+  if(licznik%100==0){
+    dialog.showModal();
+    dialogTekst.innerText = `Kliknęłaś to już ${licznik} razy, czy chcesz przejść do kolejnej niespodzianki czy bawić się dalej stokrotkami?`;
+  }
 }
 
 function generateStokrotka() {
@@ -160,3 +166,5 @@ function handleTouchMove(e) {
   }
 
 heart.addEventListener("click", ()=>{generateStokrotka(); generujNapis()});
+dialogButtons[0].addEventListener("click", ()=>{location.assign("surprise.html");});
+dialogButtons[1].addEventListener("click", ()=>{dialog.close()});
