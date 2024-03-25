@@ -84,7 +84,7 @@ function generujNapis(){
   index= getRandomInt(komplementy.length-2);
   licznik++;
   if((licznik%20==0)&&(licznik!=100)) {alert(`Kliknęłaś to już ${licznik} razy 🥺`)};
-  if((licznik%100==0)&&(confirm(`Kliknęłaś to już ${licznik} razy, czy chcesz przejść do kolejnej niespodzianki czy bawić się dalej stokrotkami?`))) location.replace("surprise.html")
+  if((licznik%100==0)&&(confirm(`Kliknęłaś to już ${licznik} razy, czy chcesz przejść do kolejnej niespodzianki czy bawić się dalej stokrotkami?`))) location.assign("surprise.html")
 }
 
 function generateStokrotka() {
