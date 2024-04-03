@@ -10,7 +10,7 @@ const tekst = document.querySelector("#tekst");
 guzik.addEventListener("click", ()=>{
     let wynik = 100;
     imie.value = imie.value.toLowerCase();
-    if((imie.value=="elżbieta")||(imie.value == "ela")){ 
+    if((imie.value=="elżbieta")||(imie.value == "ela")||(imie.value=="elcia")||(imie.value == "elza")){ 
         alert("Jesteś bezcenna dla mnie <3")
         wynik = wynik*200;}
         else wynik = wynik/2;
@@ -18,22 +18,22 @@ guzik.addEventListener("click", ()=>{
         console.log(wynik);
 
     wlosyKolor.forEach(element => {
-        wynik=wynik+parseInt(element.value);
+        if(element.checked) wynik=wynik+parseInt(element.value);
     });
     console.log(wynik);
 
     oczyKolor.forEach(element =>{
-        wynik=wynik+parseInt(element.value);
+        if(element.checked) wynik=wynik+parseInt(element.value);
     });
     console.log(wynik);
 
     kolor.forEach(element =>{
-        wynik=wynik+parseInt(element.value);
+        if(element.checked) wynik=wynik+parseInt(element.value);
     });
     console.log(wynik);
 
 
-    wynik=wynik+(wiek.value);
+    wynik=wynik+parseInt(wiek.value);
     console.log(wynik);
 
     for(let i =0; i<tekst.value.length; i++){
