@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 h1{
     font-family: "BioRhyme", serif;
@@ -12,6 +11,24 @@ h1{
     font-size: 40px;
 }
 
-form{
-    
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    text-transform: uppercase;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 2px 2px 2px black;;
 }
+button{
+    padding: 10px;
+    border-radius: 5px;
+}
+.boksy{
+    width: 50%;
+}
+
+
+
