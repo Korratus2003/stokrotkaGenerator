@@ -166,5 +166,5 @@ function handleTouchMove(e) {
   }
 
 heart.addEventListener("click", ()=>{generateStokrotka(); generujNapis()});
-dialogButtons[0].addEventListener("click", ()=>{location.assign("surprise.html");});
+dialogButtons[0].addEventListener("click", ()=>{location.assign("kalkulator.html");});
 dialogButtons[1].addEventListener("click", ()=>{dialog.close()});
