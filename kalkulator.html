@@ -5,47 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator</title>
     <link rel="stylesheet" href="style2.css">
+    <script src="script2.js" defer></script>
+    <link rel="shortcut icon" href="3.png" type="image">
 </head>
 <body>
-    <div id="container">
+    <div class="container" id="mainCont">
         <form>
-            <div id="container">
+            <div class="container">
                 <h1>Przelicz siebie na stokrotki!!!</h1>
             <div id="first" class="boksy"><h4>Wpisz imię:</h4><input type="text" id="imie"></div>
           
             <div id="second" class="boksy">
             <h4>Wybierz kolor włosów:</h4>
-            <div><input type="radio" name="wlosyKolor" id="czarny"> czarny</div>
-            <div><input type="radio" name="wlosyKolor" id="blond"> blond</div>
-            <div><input type="radio" name="wlosyKolor" id="siwy"> siwy</div>
-            <div><input type="radio" name="wlosyKolor" id="ciemnny"> brązowy</div>
+            <div><input type="radio" name="wlosyKolor"  class="wlosyKolor" id="czarny" value="12"> czarny</div>
+            <div><input type="radio" name="wlosyKolor"  class="wlosyKolor" id="blond" value="13"> blond</div>
+            <div><input type="radio" name="wlosyKolor"  class="wlosyKolor" id="siwy" value="9"> siwy</div>
+            <div><input type="radio" name="wlosyKolor"  class="wlosyKolor" id="ciemnny" value="200"> brązowy</div>
             </div>
 
             <div id="third" class="boksy">
             <h4>wybierz kolor oczu:</h4>
-            <div><input type="radio" name="oczyKolor" id="czarny"> czarny</div>
-            <div><input type="radio" name="oczyKolor" id="zielony"> zielony</div>
-            <div><input type="radio" name="oczyKolor" id="brazowy"> brązowy</div>
-            <div><input type="radio" name="oczyKolor" id="niebieski"> niebieski</div>            
+            <div><input type="radio" name="oczyKolor" class="oczyKolor" id="czarny" value="3"> czarny</div>
+            <div><input type="radio" name="oczyKolor" class="oczyKolor" id="zielony" value="200"> zielony</div>
+            <div><input type="radio" name="oczyKolor" class="oczyKolor" id="brazowy" value="2"> brązowy</div>
+            <div><input type="radio" name="oczyKolor" class="oczyKolor" id="niebieski" value="100"> niebieski</div>            
             </div>
 
             <div id="fourth" class="boksy">
             <h4>wybierz ulubiony kolor:</h4>
-            <div><input type="radio" name="kolor" id="czarny"> czarny</div>
-            <div><input type="radio" name="kolor" id="czerwony"> czerwony</div>
-            <div><input type="radio" name="kolor" id="biały"> biały</div>
-            <div><input type="radio" name="kolor" id="żółty"> żółty</div>
-            <div><input type="radio" name="kolor" id="zielony"> zielony</div>
-            <div><input type="radio" name="kolor" id="szary"> szary</div>
-            <div><input type="radio" name="kolor" id="niebieski"> niebieski</div>
+            <div><input type="radio" name="kolor" class="kolor" id="czarny" value="150"> czarny</div>
+            <div><input type="radio" name="kolor" class="kolor" id="czerwony" value="150"> czerwony</div>
+            <div><input type="radio" name="kolor" class="kolor" id="biały" value="3"> biały</div>
+            <div><input type="radio" name="kolor" class="kolor" id="żółty" value="20"> żółty</div>
+            <div><input type="radio" name="kolor" class="kolor" id="zielony" value="200"> zielony</div>
+            <div><input type="radio" name="kolor" class="kolor" id="szary" value="30"> szary</div>
+            <div><input type="radio" name="kolor" class="kolor" id="niebieski" value="200"> niebieski</div>
             </div>
 
             <div id="fifth" class="boksy">
-            <h4>podaj wiek:</h4><input type="number">
+            <h4>podaj wiek:</h4><input type="number" id="wiek">
 
-            <h4>Wpisz coś ładnego:</h4><textarea  id="tekst" cols="30" rows="10"></textarea>
+            <h4>Wpisz coś ładnego:</h4><textarea  id="tekst" cols="30" rows="6"></textarea>
         </div>
-            <button id="guzik" class="boksy">Wylicz</button>
+            <input type="button" value="Wylicz" id="guzik">
             </div>
         </form>
     </div>

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 h1{
     font-family: "BioRhyme", serif;
@@ -11,7 +12,7 @@ h1{
     font-size: 40px;
 }
 
-#container{
+.container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,12 +23,16 @@ h1{
     padding: 10px;
     box-shadow: 2px 2px 2px black;;
 }
-button{
+#guzik{
     padding: 10px;
     border-radius: 5px;
 }
 .boksy{
     width: 50%;
+}
+#mainCont{
+    border: none;
+    box-shadow: none;
 }
 
 
