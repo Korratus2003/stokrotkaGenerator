@@ -8,23 +8,29 @@
 </head>
 <body>
     <div id="container">
-        <h1>Przelicz siebie na stokrotki!!!</h1>
         <form>
-            <label>Wpisz imię</label><input type="text" id="imie">
+            <div id="container">
+                <h1>Przelicz siebie na stokrotki!!!</h1>
+            <div id="first" class="boksy"><h4>Wpisz imię:</h4><input type="text" id="imie"></div>
           
-            <h4>Wybierz kolor włosów</h4>
+            <div id="second" class="boksy">
+            <h4>Wybierz kolor włosów:</h4>
             <div><input type="radio" name="wlosyKolor" id="czarny"> czarny</div>
             <div><input type="radio" name="wlosyKolor" id="blond"> blond</div>
             <div><input type="radio" name="wlosyKolor" id="siwy"> siwy</div>
             <div><input type="radio" name="wlosyKolor" id="ciemnny"> brązowy</div>
+            </div>
 
-            <h4>wybierz kolor oczu</h4>
+            <div id="third" class="boksy">
+            <h4>wybierz kolor oczu:</h4>
             <div><input type="radio" name="oczyKolor" id="czarny"> czarny</div>
             <div><input type="radio" name="oczyKolor" id="zielony"> zielony</div>
             <div><input type="radio" name="oczyKolor" id="brazowy"> brązowy</div>
             <div><input type="radio" name="oczyKolor" id="niebieski"> niebieski</div>            
+            </div>
 
-            <h4>wybierz ulubiony kolor</h4>
+            <div id="fourth" class="boksy">
+            <h4>wybierz ulubiony kolor:</h4>
             <div><input type="radio" name="kolor" id="czarny"> czarny</div>
             <div><input type="radio" name="kolor" id="czerwony"> czerwony</div>
             <div><input type="radio" name="kolor" id="biały"> biały</div>
@@ -32,13 +38,15 @@
             <div><input type="radio" name="kolor" id="zielony"> zielony</div>
             <div><input type="radio" name="kolor" id="szary"> szary</div>
             <div><input type="radio" name="kolor" id="niebieski"> niebieski</div>
+            </div>
 
-            <h4>podaj wiek</h4><input type="number">
+            <div id="fifth" class="boksy">
+            <h4>podaj wiek:</h4><input type="number">
 
-            <h4>Wpisz coś ładnego</h4><textarea  id="tekst" cols="30" rows="10"></textarea>
-
-            <br>
-            <button>Wylicz</button>
+            <h4>Wpisz coś ładnego:</h4><textarea  id="tekst" cols="30" rows="10"></textarea>
+        </div>
+            <button id="guzik" class="boksy">Wylicz</button>
+            </div>
         </form>
     </div>
 </body>
